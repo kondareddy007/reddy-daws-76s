@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#add external variables
+#Changed in single location will effect everywhere in the script automatically
 VAR1=Paresh
 VAR2=Pawel
 
