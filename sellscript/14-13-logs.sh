@@ -4,13 +4,16 @@
 ID=$(id -u)
 TIME_STAMP=$(date +%F:%H:%M:%S)
 LOG_FILE=/tmp/$0_$TIME_STAMP.log
+R="\e[31m"
+G="\e[32m"
+n="\e[0m"
 VALIDATE(){
     if [ $1 -ne 0 ]
 then 
-    echo "ERROR::$2 ... Failed"
+    echo -e "$R ERROR::$2 ... Failed"
     exit 1
 else
-    echo "$2 ..... Success"
+    echo "$G $2 ..... Success"
 fi
 }
 
