@@ -21,6 +21,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 then
     echo "Error:: Please run this script with root access"
+    exit 1
 else
     echo "you are root user"
 fi
@@ -35,4 +36,6 @@ do
     else  
         echo "$package already installed ...SKIPPING"
     fi
+done
+
         
