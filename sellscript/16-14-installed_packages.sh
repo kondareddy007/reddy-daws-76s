@@ -39,7 +39,7 @@ do
         yum install $package -y  #istall the package
         VALIDATE $? "Installation of $package" #validate
     else  
-        echo "$package already installed ...$Y SKIPPING"
+        echo "$package already installed ...$Y SKIPPING  $N"
     fi
 done
 
