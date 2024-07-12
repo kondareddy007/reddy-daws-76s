@@ -13,7 +13,7 @@ then
     echo -e "$R ERROR::$2 ... Failed"
     exit 1
 else
-    echo "$G $2 ..... Success"
+    echo -e "$G $2 ..... Success"
 fi
 }
 
