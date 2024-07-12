@@ -3,6 +3,23 @@ greatertan --> -gt
 lessthan --> -lt 
 greatertan equal --> -ge 
 lessthan equal --> -le 
+not equl --> -ne or !=
+EXIT STATUS:-
+===========
+shellscript won't stop if it faces the error.
+it is our responsible for clear the errors.
+if you give the exit status it will stop the error. Other wise it will go to next error 
+exit 1 #You can give otherthan 0.
+
+$? --> if success, it has 0. if failed, not zero.
+function --> Code that is repeated again, you can keep repeated code in function and call it whenever you wnat.
+FUNCTION_NAME(){
+    statement to run
+}
+VALIDATE(){
+    statment to run
+}
+FUNCTION_NAME --> for calling the function.
 ############Install my sql through shell script#############
 #1.chech user is root ot not
 # root user id is always 0. if not 0 then it is not root user 
