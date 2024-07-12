@@ -20,6 +20,20 @@ VALIDATE(){
     statment to run
 }
 FUNCTION_NAME --> for calling the function.
+
+How to get the logs for previous run script:-
+-------------------------------------------
+less /var/log/message
+storing logs --> what happend yesterday
+> -->redirections
+1>---> success
+2> --->failure
+&> ---->success and failure
+ls -lrt &>temp.log ---> result is stored in temp.log file if command is correct and wrong.
+$? -->exit status of previous command
+$0 --> display script name.
+
+
 ############Install my sql through shell script#############
 #1.chech user is root ot not
 # root user id is always 0. if not 0 then it is not root user 
