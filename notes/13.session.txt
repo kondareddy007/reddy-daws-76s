@@ -32,6 +32,18 @@ storing logs --> what happend yesterday
 ls -lrt &>temp.log ---> result is stored in temp.log file if command is correct and wrong.
 $? -->exit status of previous command
 $0 --> display script name.
+$1--> first argument
+$2-->second argument.
+$N -->N'th argument
+$@ --> all arguments
+$# --> enni arguments pass chesamo thelusukovadaniki.
+
+Colors:-
+-------
+Red -- \e[31m
+Green -- \e[32m
+Yellow -- \e[33m
+normal -- \e[0m\
 
 
 ############Install my sql through shell script#############
