@@ -29,11 +29,11 @@ fi
 
 for package in $@
 do 
-    yum installed $package   #check installed or not
+    yum list installed $package   #check installed or not
     if [ $? -ne 0 ]  #if not installed
     then 
-        yum install $package -y 
-        VALIDATE $? "Installation of $package"
+        yum install $package -y  #istall the package
+        VALIDATE $? "Installation of $package" #validate
     else  
         echo "$package already installed ...SKIPPING"
     fi
