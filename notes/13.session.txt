@@ -45,6 +45,13 @@ Green -- \e[32m
 Yellow -- \e[33m
 normal -- \e[0m\
 
+loops:-
+-------
+Syntax:- for i in {1..10}
+        do 
+          echo "print $i"
+        done
+
 
 ############Install my sql through shell script#############
 #1.chech user is root ot not
