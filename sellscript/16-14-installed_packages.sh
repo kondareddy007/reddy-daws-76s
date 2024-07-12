@@ -8,23 +8,27 @@
 #!/bin/bash
 
 ID=$(id -u)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 VALIDATE(){
     if [$1 -ne 0 ]
     then 
-        echo "$2 ... Failed"
+        echo "$2 ...$R Failed $N"
         exit 1
     else
-        echo "$2 .... Success"
+        echo "$2 ....$G Success $N"
   fi
 }
 
 if [ $ID -ne 0 ]
 then
-    echo "Error:: Please run this script with root access"
+    echo "$R Error:: Please run this script with root access"
     exit 1
 else
-    echo "you are root user"
+    echo "$G you are root user"
 fi
 
 for package in $@
@@ -35,7 +39,7 @@ do
         yum install $package -y  #istall the package
         VALIDATE $? "Installation of $package" #validate
     else  
-        echo "$package already installed ...SKIPPING"
+        echo "$package already installed ...$Y SKIPPING"
     fi
 done
 
