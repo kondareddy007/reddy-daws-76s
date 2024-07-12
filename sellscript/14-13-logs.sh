@@ -25,7 +25,7 @@ else
     echo -e "$G you are root user"  
 fi
 
-yum install mysql -y &>>$LOG_FILE
+yum install mysqlii -y &>>$LOG_FILE
 
 VALIDATE $? "Installing MYSQL"
 
