@@ -3,6 +3,8 @@
 #!/bin/bash
 ID=$(id -u)
 echo "display the script name:: $0"
+echo "all arguments:: $@"
+echo "know the arguments:: $#"
 VALIDATE(){
     if [ $1 -ne 0 ]
 then 
