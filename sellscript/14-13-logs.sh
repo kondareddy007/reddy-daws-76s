@@ -13,7 +13,7 @@ then
     echo -e "ERROR::$2 ... $R Failed $N"
     exit 1
 else
-    echo -e "$2 ..... $G Success $N"
+    echo -e "$G $2 .....  Success $N"
 fi
 }
 
@@ -25,7 +25,7 @@ else
     echo -e "$G you are root user"  
 fi
 
-yum install mysqlii -y &>>$LOG_FILE
+yum install mysql -y &>>$LOG_FILE
 
 VALIDATE $? "Installing MYSQL"
 
