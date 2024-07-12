@@ -18,7 +18,7 @@ then
 else 
     echo "you are root user"  
 fi #if reverse indication is fi. means condition end.
-yum install mysqla -y
+yum install mysql -y
 #$? --> it will check the previous command run successfully or not
 if [ $? -ne 0 ]
 then 
