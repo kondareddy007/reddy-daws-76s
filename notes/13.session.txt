@@ -45,6 +45,8 @@ Green -- \e[32m
 Yellow -- \e[33m
 normal -- \e[0m\
 
+echo -e "$Red This is red clor $N"
+
 loops:-
 -------
 Syntax:- for i in {1..10}
