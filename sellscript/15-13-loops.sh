@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..20}
+for packages  in $@
 do 
-  echo "print $i"
+  echo "print $packages"
 done
