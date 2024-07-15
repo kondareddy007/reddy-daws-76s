@@ -1,0 +1,18 @@
+This 14-session video.
+DATE=15/07/2024
+
+Using loops installed any nnumber of packages
+==============================================
+sh 13.installed-packagres.sh git mysql gcc postfix net-tools
+
+$# - no of argmnets
+$@ - all arguments.
+
+1. check root user or not 
+2. if root user
+        check package is already installed or not
+        if already installed skipp it and tell user, Already installed
+        if not installed, install it.
+        validate it
+    if not root user 
+                throw the error.
