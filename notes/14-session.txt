@@ -32,6 +32,10 @@ sed -i '/leaning/ d' passwd --> leaning line is deleted in passwd file
 sed -i '1d' passwd --->first line is deleted
 s-->substitute
 
+catalogue.sh:-
+-------------
+mkdir -p /app -->
+
 MomgoDB installation through script:-
 -------------------------------------
 1. check root user or not 
