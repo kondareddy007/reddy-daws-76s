@@ -18,4 +18,4 @@ do
    echo "Deleting line: $line"
    rm -rf $line
 
-done 
+done <<< $FILES_TO_DELETE
