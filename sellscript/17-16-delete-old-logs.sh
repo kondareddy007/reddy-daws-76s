@@ -11,7 +11,7 @@ then
   echo "source directory   $SOURCE_DIR  is does not exist"
 fi
 
-FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +10 -name "*.log")
+FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +1 -name "*.log")
 
 while IFS= read -r line
 do 
