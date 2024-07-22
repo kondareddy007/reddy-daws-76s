@@ -10,7 +10,7 @@ do
   partition=$( echo $line | awk '{ print $1F }')
   if [ $ussage -ge $DISK_THRESOLD ]
   then
-     message="High disk ussage on $partition: $ussage \n"
+     message+="High disk ussage on $partition: $ussage \n"
   fi
 
 done <<< $DISK_USSAGE
