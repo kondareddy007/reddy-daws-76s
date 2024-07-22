@@ -2,7 +2,7 @@
 
 DISK_USSAGE=$(df -hT | grep -vE 'tmp|File')
 DISK_THRESOLD=1
-message=" "
+message=""
 
 while IFS= read line
 do 
@@ -11,7 +11,6 @@ do
   if [ $ussage -ge  $DISK_THRESOLD ]
   then
      message="High disk ussage on $partition: $ussage \n"
-
   fi
 
 done <<< DISK_USSAGE
