@@ -13,6 +13,6 @@ do
      message="High disk ussage on $partition: $ussage \n"
   fi
 
-done <<< DISK_USSAGE
+done <<< $DISK_USSAGE
 
 echo -e "Message: $message"
