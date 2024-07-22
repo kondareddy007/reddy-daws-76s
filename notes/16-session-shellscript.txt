@@ -16,3 +16,26 @@ delete the logs more than 14 days. delete only .logs file ont other files.
 . -->Current directory
 f --> file
 mtime --> time 
+while IFS= read -r line   #IFS means Internal fiels saperator.
+
+Disk ussage:-
+-----------
+Monitoring team always checking the memory, cpu, node status etc...
+Servers are down/more memory --->alert Devops team.
+
+How to increase volume for instance:-
+-----------------------------------
+Go to aws conslo -->Check instance availability zone --->click on the volume 
+---> Create the volume in same availability zone (ex: 12 GB )
+
+For mount volume to instance we need to run below commends
+https://docs.aws.amazon.com/ebs/latest/userguide/ebs-using-volumes.html
+
+lsblk
+sudo file -s /dev/xvdf
+sudo lsblk -f
+sudo mkfs -t xfs /dev/xvdf
+sudo mkdir /data
+sudo mount /dev/xvdf /data
+
+df -hT | grep -v tmp   # output will be teverse of tmp. tmp lines are not displayed. remaining all files displayed expect tmp.
