@@ -15,3 +15,5 @@ do
   fi
 
 done <<< DISK_USSAGE
+
+echo -e "Message: $message"
