@@ -8,7 +8,7 @@ while IFS= read line
 do 
   ussage=$( echo $line | awk '{ print $6 }' | cut -d % -f1)
   partition=$( echo $line | awk '{ print $1F }')
-  if [ $ussage -ge $DISK_THRESOLD ];
+  if [ $ussage -ge $DISK_THRESOLD ]
   then
      message="High disk ussage on $partition: $ussage \n"
   fi
