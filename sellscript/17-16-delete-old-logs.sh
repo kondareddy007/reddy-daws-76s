@@ -6,7 +6,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 
-if [ ! -d $SOURCE_DIR ] #! donates opposite
+if [ ! -d $SOURCE_DIR ] #! donates opposite IFS=Internal field separator.
 then
   echo "source directory   $SOURCE_DIR  is does not exist"
 fi
