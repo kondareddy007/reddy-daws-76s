@@ -14,4 +14,4 @@ do
 
   fi
 
-done < DISK_USSAGE
+done <<< DISK_USSAGE
