@@ -40,4 +40,5 @@ sudo mkfs -t xfs /dev/xvdf
 sudo mkdir /data
 sudo mount /dev/xvdf /data
 
-df -hT | grep -v tmp   # output will be teverse of tmp. tmp lines are not displayed. remaining all files displayed expect tmp.
+df -hT | grep -vE "tmp|Filesystem"   # tmp and Filesystem  lines are not displayed. remaining all files displayed expect tmp and filesystem.
+message+="High disk ussage on $partition: $ussage \n"
