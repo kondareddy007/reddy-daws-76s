@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Name=""
-wishes="Good Morning"
+Wishes="Good Morning"
 
 USSAGE(){
     echo "USSAGE: $(basename $0) -n <name> -w <wishes>"
@@ -17,3 +17,5 @@ while getopts ":n:w:h" opt; do
             h) USSAGE; exit 1;
       esac
 done
+
+echo "Hello $Name.$Wishes I have been learning shell script. "
