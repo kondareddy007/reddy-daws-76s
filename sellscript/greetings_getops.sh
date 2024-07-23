@@ -28,4 +28,4 @@ if [ -z "$Name" ] #Now wishes is optional
    USSAGE
    exit 1   
 fi
-echo "Hello $Name.$Wishes I have been learning shell script. "
+echo "Hello $Name.$Wishes I have been learning shell script."
