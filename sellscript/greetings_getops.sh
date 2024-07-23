@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Name=""
-Wishes="Good morning"
+Wishes=""
 
 USSAGE(){
     echo "USSAGE: $(basename $0) -n <name> -w <wishes>"
