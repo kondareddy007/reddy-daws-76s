@@ -18,4 +18,9 @@ while getopts ":n:w:h" opt; do
       esac
 done
 
+if [ -z "$Name"] || [ -z $Wishes ]; then
+   echo "Both -n and -w are mandatory options"
+   USSAGE
+   exit 1   
+fi
 echo "Hello $Name.$Wishes I have been learning shell script. "
