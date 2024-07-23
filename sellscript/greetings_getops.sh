@@ -14,13 +14,18 @@ while getopts ":n:w:h" opt; do
       case $opt in
             n) Name="$OPTARG";;
             w) Whishes="$OPTARG";;
+             :) USSAGE; exit;;
+                USSAGE; exit;;
+
             h) USSAGE; exit;
       esac
 done
 
-if [ -z "$Name" ] || [ -z "$Wishes" ]
+#if [ -z "$Name" ] || [ -z "$Wishes" ]
+if [ -z "$Name" ] #Now wishes is optional
  then
-   echo "Both -n and -w are mandatory options"
+   #echo "Both -n and -w are mandatory options"
+   echo "-n is maatory"
    USSAGE
    exit 1   
 fi
