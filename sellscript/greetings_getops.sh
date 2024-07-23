@@ -14,7 +14,7 @@ while getopts ":n:w:h" opt; do
       case $opt in
             n) Name="$OPTARG";;
             w) Whishes="$OPTARG";;
-            h) USSAGE; exit 1;
+            h) USSAGE; exit;
       esac
 done
 
